@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+font-family: "poppins",serif;
+}
+
+body{
+    background-color: rgb(3, 3, 34);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 0.srem;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #eeee;
+}
+.navbar a:hover{
+    color: aqua;
+}
+hr{
+    opacity: 10%;
+    color: antiquewhite;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+.arrow{
+    /* بيخلي يتناسب مع اقرب عنصر لي */
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+}
+.herosub{
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+}
+.name{
+    font-size: 3rem;
+    color: #eeee;
+}
+.title{
+    font-size: 4rem;
+    color: #00d9ff;
+}
+
+.herobtns{
+    display: flex;
+    gap: 1rem;
+    /* هيا المساحه برا العنصر */
+    margin-top: 1.5rem;
+}
+.hireme{
+    background-color: #00d9ff;
+    color: #eeee;
+    border-radius: 24px;
+    text-decoration: none;
+    /* هيا المساحه جوا العنصر */
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.cv{
+    background-color: rgba(57, 62, 70, 0.75);
+    display: flex;
+    text-decoration: none;
+    color: #eeee;
+    border-radius: 24px;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(4px);
+
+}
+.Aboutme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin: 5rem auto;
+    max-width: 1200px;
+
+}
+
+.aboutname{
+color: #eeee;
+}
+.textcon{
+    display: flex;
+    /*   بتخلي كله جمب بعض  بالتساوي*/
+    flex-direction: column;
+
+}
+.textti{
+display: flex;
+align-items: center;
+gap: 5px;
+font-size: 2rem;
+}
+.abouttitle{
+    color: #00d9ff;
+}
+.aboutmepar{
+    color: #eeee;
+    text-align: justify;
+}
+
+/* بنحدد في السيكشن كله مقاس الصفحه */
+.works{
+background-image: url(../assets/svg/background.svg);
+padding: 10rem 10rem;
+margin: 5rem 0rem;
+
+
+}
+.workcon{
+flex-direction: column;
+display: flex;
+max-width: 1200px;
+align-items: left;
+justify-content: space-around;
+margin: 5rem auto;
+}
+.worktitle{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+.works ul{
+/* 
+بتخلي العناصر تنزل تحت بعض لو كتير بالتنسيق
+flex-wrap: wrap;
+
+gap: 15px; */
+display: flex;
+list-style-type: none;
+align-items: center;
+justify-content: space-between;
+}
+.mywor{
+    color: #00d9ff;
+}
+.my{
+    color: #eeee;
+}
+
+.works li{
+    border-radius: 16px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+}
+
+.works li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    /* بتخلي الصوره تكبر لما ادوس عليها */
+    transition: transform 0.2s;
+}
+
+.works li :hover{
+    transform: scale(1.5);
+}
+
+.contactcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    flex-direction: column;
+}
+.contactitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+}
+.phone{
+    display: flex;
+}
+.contact h3, .contact a{
+    color: #eeee;
+    text-decoration: none;
+
+
+}
+.contactemal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+.sociolmedia{
+display: flex;
+ align-items: center;
+justify-content: center; 
+gap: 3rem;
+
+}
+.sociolmedia a{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px); 
+    padding: 1rem;
+    border-radius: 50px;
+    align-items: center;
+}
+.sociolmedia img{
+    width: 24px;
+    height: 24px;
+}
+footer{
+    color: #eeee;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        margin: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin: 3rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .herobtns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Aboutme {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem 1.5rem;
+    }
+
+    .textti {
+        font-size: 1.5rem;
+    }
+
+    .aboutmepar {
+        text-align: center;
+    }
+
+    .works {
+        padding: 5rem 1.5rem;
+    }
+
+    .workcon {
+        margin: 2rem auto;
+    }
+
+    .works ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .works li {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .works li img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contactcon {
+        margin: 2rem 1.5rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0;
+    }
+
+    .sociolmedia {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
